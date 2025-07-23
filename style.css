@@ -3,3 +3,17 @@
 h2 {
   font-family: "Noto Serif", serif;
 }
+
+.spin {
+  animation: spinning 9s infinite linear;
+  transition: all;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
