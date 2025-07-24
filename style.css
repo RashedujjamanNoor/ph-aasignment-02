@@ -7,9 +7,6 @@ h2 {
 .spin {
   animation: spinning 9s infinite linear;
   transition: all;
-}
-
-.img_shadow {
   filter: drop-shadow(5px 5px 2px #555);
 }
 
