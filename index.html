@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body class="mb-22">
+  <body>
     <nav>
       <section
         class="flex justify-between items-center mt-[13px] mx-[16px] md:mt-[30px] md:mx-[150px]"
@@ -39,7 +39,7 @@
         class="md:mx-[150px] md:mt-[120px] flex flex-col md:flex-row md:jusctify-between"
       >
         <div class="md:w-1/2 mt-2 mb-1 mx-1 flex items-end order-2 md:order-1">
-          <div>
+          <div class="mx-4">
             <h2 class="font-bold text-[24px] md:text-[65px]">
               ALWAYS
               <span class="text-orange-500"
@@ -62,14 +62,14 @@
           />
         </div>
       </section>
-      <section class="mt-16 md:mt-30 md:mx-[150px] mx-[16px]">
+      <section class="mt-15 md:mt-30 md:mx-[150px] mx-[16px]">
         <div class="text-center">
           <h2 class="font-bold text-[24px] mb-4 md:text-[50px]">
             <span class="text-orange-500">Our</span> Plants
           </h2>
           <p class="text-black/50 text-center">
             Indulge your senses with the beauty and fragrance of our fresh
-            flower shop. From <br />
+            flower shop. From <br class="hidden md:block" />
             classic roses to exotic blooms, we offer a wide variety of fresh.
           </p>
         </div>
@@ -170,7 +170,7 @@
           <img
             src="./assets/trusted-badge.png"
             alt=""
-            class="spin w-[286px] hidden xl:block relative top-[-130px] left-[370px]"
+            class="spin img_shadow w-[286px] hidden xl:block relative top-[-130px] left-[370px]"
           />
         </div>
         <div>
@@ -245,7 +245,61 @@
           </div>
         </div>
       </section>
+      <section class="w-full mt-10 lg:mt-[120px]">
+        <div
+          class="bg-[url(./assets/news-letter-bg.png)] bg-cover w-full h-full"
+        >
+          <div
+            class="flex flex-col justify-center items-center pt-[110px] pb-15 w-full"
+          >
+            <h2 class="text-white font-bold text-[20px] md:text-[50px]">
+              Join the colorful Bunch
+            </h2>
+            <div class="mt-6 w-full flex justify-center items-center">
+              <input
+                type="text"
+                placeholder="Write email"
+                class="py-4 px-5 w-2/5 bg-white"
+              />
+              <button class="bg-orange-500 text-white py-4 px-5">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <footer
+      class="mx-4 lg:mx-[160px] grid lg:grid-cols-4 lg:justify-items-center lg:content-center gap-8 py-12"
+    >
+      <div>
+        <img src="./assets/logo.png" alt="logo" class="w-[180px]" />
+        <p class="text-black/50">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop.
+        </p>
+      </div>
+      <div class="flex flex-col gap-8 text-gray-500">
+        <p>Home</p>
+        <p>About Us</p>
+        <p>Blog</p>
+        <p>FAQ</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="flex flex-col gap-8 text-gray-500">
+        <p>Features</p>
+        <p>Pricing</p>
+        <p>Privacy Policy</p>
+        <p>Terms of Service</p>
+        <p>Help Center</p>
+      </div>
+      <div class="flex gap-6 text-gray-500 mt-5">
+        <img src="./assets/icon-linkedin.png" alt="linkedin" class="w-9 h-9" />
+        <img src="./assets/icon-twitter.png" alt="twitter" class="w-9 h-9" />
+        <img src="./assets/icon-facebook.png" alt="facebook" class="w-9 h-9" />
+        <img src="./assets/icon-youtube.png" alt="youtube" class="w-9 h-9" />
+      </div>
+    </footer>
     <script>
       const buttons = document.querySelectorAll(".btn");
       buttons.forEach(function (btn) {
